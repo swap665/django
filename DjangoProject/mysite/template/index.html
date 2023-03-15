@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        .navbar-brand{
+            font-family: "serif";
+            font-size: 40px;
+        }
+        #subtitle{
+            color: green;
+            margin-top: -10px;
+        }
+        .form-control{
+            margin-bottom: 20px;
+        }
+        .col-md-3{
+            margin-top: 20px;
+        }
+        .col-md-4{
+            margin-top: 20px;
+        }
+        #formset{
+            margin-left:250px;
+        }
+       
+       
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            
+
+
+           <div class="position-relative">
+              <b><a class="navbar-brand" href="https://www.techint.com/en">TECHINT</a></b>
+              <div class="position-absolute top-100 start-100 translate-middle"></div>
+
+                  <p id="subtitle">Engineering & Contruction</p>
+           </div>
+          </div>
+      </nav>
+     <div id="formset"> 
+	<form class="row g-6" >
+        <div class="col-md-3">
+          <label for="Class" class="form-label">Class</label>
+          <input type="text" class="form-control" id="Class">
+        </div>
+        <div class="col-md-3">
+          <label for="SubClass" class="form-label">SubClass</label>
+          <input type="text" class="form-control" id="SubClass">
+        </div>
+        <div class="col-md-4">
+            <label for="Attributes" class="form-label">Attributes</label>
+            <input type="text" class="form-control" id="Attributes">
+          </div>
+        <div class="col-10">
+            <label for="formFile" class="form-label">File Input</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-10">
+          <label for="InputQuery" class="form-label">Input Query</label>
+          <input type="text" class="form-control" id="InputQuery" placeholder="Enter the Query">
+        
+        </div>
+        <div class="col-10">
+            <label for="Answer" class="form-label">Answer</label>
+            <input type="text" class="form-control" id="Answer" placeholder="Your Answer">
+          
+          </div>
+        <div class="col-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary">Delete</button>
+          <button type="download" class="btn btn-primary">Download</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
